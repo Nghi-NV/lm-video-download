@@ -544,8 +544,8 @@ class _HomeScreenState extends State<HomeScreen>
                     ),
                     const SizedBox(height: 24),
 
-                    // Progress Panel (Show only when downloading or complete)
-                    if (_isDownloading || _progress > 0) ...[
+                    // Progress Panel (Show only when downloading, complete, or failed with error)
+                    if (_isDownloading || _progress > 0 || _statusMessage.contains('Lỗi')) ...[
                       Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
@@ -561,9 +561,13 @@ class _HomeScreenState extends State<HomeScreen>
                                 Expanded(
                                   child: Text(
                                     _statusMessage,
-                                    style: const TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.w500),
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w500,
+                                      color: _statusMessage.contains('Lỗi')
+                                          ? Colors.redAccent
+                                          : Colors.white,
+                                    ),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                   ),
