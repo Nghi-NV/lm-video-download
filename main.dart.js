@@ -42271,7 +42271,7 @@ A.al2.prototype={
 $0(){this.a.d.scH(u.ae)},
 $S:0}
 A.al3.prototype={
-$0(){this.a.d.scH("https://cctv.bizfly.cluster.lumi.biz/api/v1/event/019ef366-eb88-7e73-92a6-5b21ec5c4309/record.m3u8")},
+$0(){this.a.d.scH("https://your-h265-camera-stream-url.com/stream.m3u8")},
 $S:0}
 A.GZ.prototype={
 l(){var s=this,r=s.bo$
@@ -94878,7 +94878,7 @@ B.Qd=new A.p(!0,null,null,null,null,null,16,B.bX,null,0.5,null,null,null,null,nu
 B.SF=new A.jG("B\u1eaft \u0111\u1ea7u T\u1ea3i xu\u1ed1ng",null,B.Qd,null,null,null,null,null,null)
 B.QZ=new A.p(!0,B.k,null,null,null,null,26,B.bX,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.SG=new A.jG("Lumi HLS Downloader",null,B.QZ,null,null,null,null,null,null)
-B.SH=new A.jG("Bizfly H.265",null,null,null,null,null,null,null,null)
+B.SH=new A.jG("Camera H.265",null,null,null,null,null,null,null,null)
 B.SJ=new A.jG("BipBop H.264",null,null,null,null,null,null,null,null)
 B.W1=new A.agB(0,"system")
 B.Jy=new A.j(0.056,0.024)
