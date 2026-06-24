@@ -101,7 +101,7 @@ You can download HLS streams either by merging all TS segments into a single fil
 final task = await HlsDownloader.instance.createDownload(
   taskId: 'my_video_123',
   m3u8Url: 'https://example.com/videos/stream.m3u8',
-  fileName: 'my_holiday_video.ts', // Output file name if merged
+  fileName: 'my_holiday_video.mp4', // Output file name if merged
   downloadMode: HlsDownloadMode.mergeAsSingleFile, // or keepFolderStructure
   headers: {
     'Authorization': 'Bearer token_here',
