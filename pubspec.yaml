@@ -1,0 +1,27 @@
+name: lm_video_download
+description: A high-performance Flutter HLS (m3u8) video downloader supporting concurrent downloads, AES-128 decryption, auto-resume, and local server offline playback.
+version: 1.0.0
+homepage: https://github.com/Nghi-NV/lm-video-download
+repository: https://github.com/Nghi-NV/lm-video-download
+issue_tracker: https://github.com/Nghi-NV/lm-video-download/issues
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  http: ^1.2.1
+  encrypt: ^5.0.3
+  shelf: ^1.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+
